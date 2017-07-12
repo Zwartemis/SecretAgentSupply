@@ -1,10 +1,10 @@
-/* Delete before publishing */
+/* Delete before publishing
 
 div, nav, span, footer, h2, h3, h4, h5, p, li, ul,ol, img {
  border: 1px solid blue;
 }
 
-/*Delete above here before publishing */
+Delete above here before publishing */
 
 /* Basic structure */
 
@@ -54,6 +54,7 @@ header .container {
   background-image: url('../images/moto.jpeg');
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 25rem;
 }
 
@@ -70,14 +71,15 @@ header .container {
   text-transform: uppercase;
   padding: 2rem 3rem;
   margin: auto 0;
-}
-
-.new-arrivals p {
-  font-size: 1rem;
+  position: relative;
 }
 
 .new-arrivals h2 {
   font-size: 2rem;
+}
+
+.new-arrivals p {
+  font-size: 1rem;
 }
 
 /* Navigation bar */
@@ -199,5 +201,65 @@ footer .container {
 
   .item#glasses {
     display: none;
+  }
+}
+
+/* Mobile response */
+
+@media only screen and (max-width: 470px) {
+  .hero {
+    height: 15rem;
+  }
+
+  .hero .container {
+    display: block;
+  }
+
+  .new-arrivals {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    top: 10rem;
+  }
+
+  .new-arrivals h2 {
+    font-size: 1rem;
+  }
+
+  .new-arrivals p {
+    font-size: 0.77rem;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .item#watch {
+    display: none;
+  }
+
+  .products-section .item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-section {
+    flex-direction: column;
+  }
+
+  .info-section .item {
+    width: 90%;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+
+  footer .container {
+    justify-content: center;
   }
 }
