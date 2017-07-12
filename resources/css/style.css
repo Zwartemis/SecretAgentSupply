@@ -213,6 +213,7 @@ footer .container {
 
   .hero .container {
     display: block;
+    overflow: hidden;
   }
 
   .new-arrivals {
