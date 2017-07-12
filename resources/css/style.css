@@ -169,3 +169,35 @@ footer .container {
   align-items: center;
   height: 5rem;
 }
+
+/* Desktop response */
+
+@media only screen and (min-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* Tablet response */
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  ul {
+    justify-content: center;
+  }
+
+  .item {
+    width: 47%;
+  }
+
+  .item#glasses {
+    display: none;
+  }
+}
